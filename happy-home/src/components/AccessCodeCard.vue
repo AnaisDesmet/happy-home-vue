@@ -58,7 +58,8 @@ const emit = defineEmits<{
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 342px;
+  width: 100%;
+  max-width: 342px;
   padding: 22px;
   border: 1px solid var(--color-surface-border);
   border-radius: 8px;
@@ -131,7 +132,7 @@ const emit = defineEmits<{
 
 @media (min-width: 768px) {
   .card {
-    width: 288px;
+    max-width: 288px;
     gap: 20px;
   }
 }

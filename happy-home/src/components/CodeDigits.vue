@@ -25,6 +25,7 @@ const digits = computed(() => {
 .digits {
   display: flex;
   justify-content: space-between;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -34,7 +35,8 @@ const digits = computed(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
+  flex: 0 1 64px; /* 64px wide, but may shrink on very narrow screens */
+  min-width: 0;
   height: 80px;
   border: 1px solid var(--color-box-border);
   border-radius: 4px;
@@ -46,7 +48,7 @@ const digits = computed(() => {
 
 @media (min-width: 768px) {
   .digit {
-    width: 48px;
+    flex-basis: 48px;
     height: 65px;
     font-size: 44px;
   }
