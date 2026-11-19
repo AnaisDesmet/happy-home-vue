@@ -1,0 +1,29 @@
+/* Design tokens: names match the Figma variables. Light theme.
+   Dark and high-contrast overrides are added in the add-theming change. */
+:root {
+  --color-bg: #0f0081;
+  --color-on-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-border: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #bcbcbc;
+  --color-box: #f6f6f6;
+  --color-box-border: #f6f6f6;
+  --color-primary: #3014ff;
+  --color-on-primary: #ffffff;
+  --color-icon-muted: #808080;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-on-bg);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
